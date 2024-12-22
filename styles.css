@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+    --light-purple: hsl(254, 88%, 90%);
+    --dark-purple:  hsl(256, 67%, 59%);
+    --light-yellow: hsl(31, 66%, 93%);
+    --dark-yellow: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+    --bg: hsl(30, 7%, 95%);
+    --black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: 18px;
+    background-color: var(--bg);
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin: 0 0 0.1em 0;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 0 0 0.5em 0;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "left-side hero-card hero-card schedule-timing"
+    "left-side manage-accounts posting-schedule schedule-timing"
+    "left-side growth-stats follower-growth follower-growth";
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 1.4em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container > * {
+    padding: 1.2em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-card {
+    grid-area: hero-card;
+    background-color: var(--dark-purple);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-card img {
+    height: 1.8em;
+}
+
+.quick-create {
+    background-color: var(--light-yellow);
+}
+
+.quick-create img {
+    width: 100%;
+}
+
+.schedule-timing {
+    grid-area: schedule-timing;
+    background-color: var(--light-purple);
+    overflow: hidden;
+}
+
+.schedule-timing img {
+    width: 162%;
+    position: relative;
+    margin-left: auto;
+}
+
+.ai-writing {
+    background-color: var(--dark-yellow);
+}
+
+.ai-writing img {
+    width: 100%;
+}
+
+.left-side {
+    padding: 0;
+    grid-area: left-side;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.4em;
+}
+
+.quick-create, .ai-writing {
+    flex-grow: 1;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.manage-accounts {
+    grid-area: manage-accounts;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.manage-accounts img {
+    width: 120%;
+    position: relative;
+    margin-left: auto;
+    border-radius: 100px;
+}
+
+.posting-schedule {
+    grid-area: posting-schedule;
+    background-color: var(--dark-yellow);
+    overflow: hidden;
+    justify-content: start;
+}
+
+.posting-schedule img {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+}
+
+.growth-stats {
+    align-items: flex-start;
+    grid-area: growth-stats;
+    background-color: var(--white);
+}
+
+.growth-stats img {
+    width: 100%;
+}
+
+.follower-growth {
+    flex-direction: row;
+    grid-area: follower-growth;
+    background-color: var(--dark-purple);
+    color: var(--white);
+}
+
+.follower-growth img {
+    width: 46%;
+}
+
+.text-yellow {
+    color: var(--dark-yellow);
+}
