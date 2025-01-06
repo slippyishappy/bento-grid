@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: https://github.com/slippyishappy/bento-grid
+- Live Site URL: https://slippyishappy.github.io/bento-grid/
 
 ## My process
 
